@@ -1,0 +1,565 @@
+*{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    scrollbar-color: silver black;
+}
+
+.no-list-type{
+    list-style-type: none;
+}
+
+#header{
+    padding: 30px 50px;
+    background: url("photos/campus.jpg") round;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a{
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#logo{
+    background-color: transparent;
+}
+
+#info-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    justify-content: end;
+    justify-items: end;
+}
+
+#header-navegator-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1em;
+    justify-content: end;
+    justify-items: end;
+    align-content: center;
+    align-items: center;
+    color: rgb(188, 174, 174);
+}
+
+#slogan{
+    background: transparent;
+}
+
+#search-bar-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    column-gap: 5px;
+    justify-content: end;
+    justify-items: end;
+    align-content: center;
+    align-items: center;
+}
+
+#search-bar{
+    width: 90%;
+    caret-color: cyan;
+    color: wheat;
+    border-radius: 50px;
+    border-color: cyan;
+    height: 30px;
+}
+
+#search-icon{
+    background: transparent;
+}
+
+#navegator-container{
+    background-color: navy;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    column-gap: 5px;
+}
+
+.menu-containers{
+    background: none;
+    text-align: center;
+}
+
+.menu{
+    display: block;
+    font-family: DFKai-SB;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.menu:hover{
+    background: rgba(23, 192, 225, 0.7);
+    transition: background .5s ease;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    top: 205px;
+}
+
+.menu-containers:hover .popup{
+    display: block;
+}
+
+.popup-menu-container{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    opacity: 0.6;
+}
+
+#one-column-grid{
+    grid-template-columns: auto;
+}
+
+.items{
+    display: block;
+    background-color: navy;
+    text-align: center;
+    font-family: DFKai-SB;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 170px;
+}
+
+.items:hover{
+    background: rgba(23, 192, 225, 0.7);
+    transition: background 0.5s ease;
+}
+
+#second-menu-popup{
+    left: 150px;
+}
+
+#third-menu-popup{
+    left: 350px;
+}
+
+#fourth-menu-popup{
+    left: 555px;
+}
+
+#fifth-menu-popup{
+    left: 760px;
+}
+
+#sixth-menu-popup{
+    left: 1250px;
+}
+
+.slideshow{
+    display: none;
+}
+
+.covers{
+    width: 100%;
+}
+
+
+#dots-container{
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.dots{
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+
+#section{
+    margin: 30px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    padding: 3px 10px;
+}
+
+.news{
+    padding: 10px;
+    box-shadow: 1px 1px 10px white, -1px -1px 10px silver;
+    width: 370px;
+    height: 430px;
+}
+
+.news:hover{
+    background-color: navy;
+}
+
+.news:hover .day, .news:hover .year-month{
+    color: white;
+}
+
+.news-cover{
+    width: 97%;
+    height: 180px;
+    margin: 10px 5px;
+}
+
+.date-title-container{
+    background: transparent;
+    display: grid;
+    width: 95%;
+    height: 70px;
+    margin: 5px auto;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 15px;
+    justify-content: space-around;
+}
+
+.date-container{
+    background: transparent;
+    padding: 5px 1px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+}
+
+.day{
+    background: transparent;
+    font-family: Verdana;
+    font-size: 32px;
+    text-align: center;
+    color: cyan;
+    text-decoration: underline white 1px;
+}
+
+.year-month{
+    background: transparent;
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+    color: cyan;
+}
+
+.title-container{
+    background: transparent;
+    padding: 5px 0;
+}
+
+.title{
+    background: transparent;
+    height: 50px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.description{
+    background: transparent;
+    padding: 5px;
+    font-size: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    max-height: 4.5em;
+}
+
+#information-container{
+    margin: 30px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-content: center;
+    height: 500px;
+}
+
+.information-menu-area{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 3px solid white;
+}
+
+.information-menu-container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.information-menu{
+    background: blue;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.more{
+    color: yellow;
+}
+
+.post-container{
+    margin: 0;
+    padding-left: 0;
+}
+
+.post{
+    line-height: 50px;
+    border-bottom: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: start;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.arrow-title-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    column-gap: 5px;
+    justify-content: start;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.post-link{
+    width: 300px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    max-height: 1.5em;
+}
+
+.post-link:hover{
+    text-decoration: underline green 1px;
+    color: yellow;
+}
+
+#campus-news-button{
+    background-color: blue;
+}
+
+#campus-news{
+    display: block;
+}
+
+#department-story-button{
+    background: transparent;
+}
+
+#department-story{
+    display: none;
+}
+
+#accelerator-container{
+    margin: 10px 40px;
+}
+
+.accelerator-menu-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    justify-items: start;
+    align-content: center;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+
+.accelerator-menu{
+    padding: 10px;
+    background: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#show-area{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.previous-next-buttons{
+    font-size: 39px;
+    padding: 10px;
+    background: navy;
+    border-radius: 50px;
+}
+
+#image-display-area{
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.accelerate-images{
+    width: 280px;
+    margin: 0 10px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#footer{
+    background: navy;
+    height: 300px;
+    margin: 0;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: start;
+}
+
+#links-container{
+    padding: 10px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 10px;
+}
+
+#links{
+    background: transparent;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.link-option-containers{
+    font-size: 18px;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+#qrcode-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-content: top;
+    align-items: top;
+}
+
+.qrcodes{
+    background: transparent;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+}
+
+#other-information-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px;
+}
+
+#telephone-address-container{
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 15px;
+    justify-content: end;
+    justify-items: end;
+    font-weight: bolder;
+}
+
+#telephone{
+    background: transparent;
+    font-size: 18px;
+}
+
+#address{
+    background: transparent;
+    font-size: 15px;
+}
+
+#copyright-container{
+    padding-right: 40px;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    font-size: 15px;
+}
+
+#copyright-image{
+    background: transparent;
+    height: 30px;
+}
+
+#copyright-text-container,
+#copyright-text-container div{
+    background: transparent;
+}
